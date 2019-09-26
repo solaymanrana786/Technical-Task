@@ -7,22 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2B1081DD233B79F800F4F7BA /* circle copy 2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 2B1081DB233B79F700F4F7BA /* circle copy 2.jpeg */; };
-		2B1081DE233B79F800F4F7BA /* circle copy.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 2B1081DC233B79F800F4F7BA /* circle copy.jpeg */; };
 		2B21E526233A0EC7000887FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B21E525233A0EC7000887FB /* AppDelegate.swift */; };
 		2B21E528233A0EC7000887FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B21E527233A0EC7000887FB /* ViewController.swift */; };
 		2B21E52B233A0EC7000887FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B21E529233A0EC7000887FB /* Main.storyboard */; };
 		2B21E52D233A0EC9000887FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B21E52C233A0EC9000887FB /* Assets.xcassets */; };
 		2B21E530233A0EC9000887FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B21E52E233A0EC9000887FB /* LaunchScreen.storyboard */; };
-		2B21E538233B2BC9000887FB /* download.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B21E537233B2BC9000887FB /* download.png */; };
 		2B21E53A233B3151000887FB /* splashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B21E539233B3151000887FB /* splashViewController.swift */; };
-		2B21E53C233B32BA000887FB /* Silver-Balls-Swinging.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2B21E53B233B32B9000887FB /* Silver-Balls-Swinging.gif */; };
 		2B21E53E233B3D03000887FB /* gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B21E53D233B3D03000887FB /* gif.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2B1081DB233B79F700F4F7BA /* circle copy 2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "circle copy 2.jpeg"; sourceTree = "<group>"; };
-		2B1081DC233B79F800F4F7BA /* circle copy.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "circle copy.jpeg"; sourceTree = "<group>"; };
 		2B21E522233A0EC7000887FB /* Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Task.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B21E525233A0EC7000887FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B21E527233A0EC7000887FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -30,9 +24,7 @@
 		2B21E52C233A0EC9000887FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B21E52F233A0EC9000887FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B21E531233A0EC9000887FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2B21E537233B2BC9000887FB /* download.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = download.png; sourceTree = "<group>"; };
 		2B21E539233B3151000887FB /* splashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = splashViewController.swift; sourceTree = "<group>"; };
-		2B21E53B233B32B9000887FB /* Silver-Balls-Swinging.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Silver-Balls-Swinging.gif"; sourceTree = "<group>"; };
 		2B21E53D233B3D03000887FB /* gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = gif.swift; path = ../gif.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,10 +64,6 @@
 				2B21E527233A0EC7000887FB /* ViewController.swift */,
 				2B21E529233A0EC7000887FB /* Main.storyboard */,
 				2B21E52C233A0EC9000887FB /* Assets.xcassets */,
-				2B21E53B233B32B9000887FB /* Silver-Balls-Swinging.gif */,
-				2B21E537233B2BC9000887FB /* download.png */,
-				2B1081DB233B79F700F4F7BA /* circle copy 2.jpeg */,
-				2B1081DC233B79F800F4F7BA /* circle copy.jpeg */,
 				2B21E52E233A0EC9000887FB /* LaunchScreen.storyboard */,
 				2B21E531233A0EC9000887FB /* Info.plist */,
 			);
@@ -140,13 +128,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B21E53C233B32BA000887FB /* Silver-Balls-Swinging.gif in Resources */,
 				2B21E530233A0EC9000887FB /* LaunchScreen.storyboard in Resources */,
 				2B21E52D233A0EC9000887FB /* Assets.xcassets in Resources */,
-				2B1081DE233B79F800F4F7BA /* circle copy.jpeg in Resources */,
-				2B1081DD233B79F800F4F7BA /* circle copy 2.jpeg in Resources */,
 				2B21E52B233A0EC7000887FB /* Main.storyboard in Resources */,
-				2B21E538233B2BC9000887FB /* download.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

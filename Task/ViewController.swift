@@ -12,12 +12,45 @@ import CoreLocation
 
 class ViewController: UIViewController, MKMapViewDelegate {
     
-    @IBOutlet weak var menuView: UIView!
+    
+    
+    @IBOutlet weak var hideAndShowView: UIView!
     @IBOutlet weak var addressLabel: UILabel!
     
+    @IBOutlet weak var downView: UIView!
     @IBOutlet weak var cityLabel: UILabel!
     @IBOutlet weak var mapView: MKMapView!
     
+    
+    @IBAction func hideButton(_ sender: Any) {
+        
+
+        
+        UIView.animate(withDuration: 0.2, delay: 0, options: [], animations: {
+            self.hideAndShowView.alpha = 0 // Here you will get the animation you want
+        }, completion: { _ in
+            
+            if self.hideAndShowView.isHidden == false{
+                self.hideAndShowView.isHidden = true
+                UIView.animateKeyframes(withDuration: 0.25, delay: 0.0, options: UIView.KeyframeAnimationOptions(rawValue: 7), animations: {
+                    self.downView.frame.origin.y+=200
+                },completion: nil)
+                
+            }
+            
+            else{
+                self.hideAndShowView.isHidden = false
+                UIView.animateKeyframes(withDuration: 0.25, delay: 0.0, options: UIView.KeyframeAnimationOptions(rawValue: 7), animations: {
+                    self.downView.frame.origin.y-=200
+                    self.hideAndShowView.alpha = 1
+                },completion: nil)
+            }// Here you hide it when animation done
+          
+            })
+
+    }
+
+
     let locationManager = CLLocationManager()
     let regionInMeter: Double = 10000
     var previousLocation: CLLocation?
@@ -25,14 +58,6 @@ class ViewController: UIViewController, MKMapViewDelegate {
     
     @IBOutlet weak var menuButton: UIButton!
     
-    
-    @IBAction func menuButtonPressed(_ sender: Any) {
-        if menuView.isHidden == true {
-            menuView.isHidden = false
-        }else{
-            menuView.isHidden = true
-        }
-    }
     
     @IBAction func gpsTouch(_ sender: Any) {
         startTracingUserLocation()
@@ -42,6 +67,8 @@ class ViewController: UIViewController, MKMapViewDelegate {
         super.viewDidLoad()
         mapView.delegate = self
         checkLocationService()
+       
+        
     }
     
     func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
