@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apptern" translatesAutoresizingMaskIntoConstraints="NO" id="qmd-Kk-Bw7">
+                                <rect key="frame" x="143" y="691" width="271" height="171"/>
+                                <color key="backgroundColor" red="0.17668214440345764" green="0.17609217762947083" blue="0.19609740376472473" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="VCO-Vm-qGv">
+                                <rect key="frame" x="108" y="282" width="198" height="332"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.17668214439999999" green="0.17609217760000001" blue="0.19609740379999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="qmd-Kk-Bw7" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="5dP-sX-rOG"/>
+                            <constraint firstItem="VCO-Vm-qGv" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="8gz-1c-8Ul"/>
+                            <constraint firstItem="VCO-Vm-qGv" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="EPM-SA-Fjh"/>
+                            <constraint firstItem="VCO-Vm-qGv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="238" id="kYu-fz-dfs"/>
+                            <constraint firstItem="VCO-Vm-qGv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="108" id="ldH-0n-vbn"/>
+                            <constraint firstAttribute="trailing" secondItem="qmd-Kk-Bw7" secondAttribute="trailing" id="n67-bp-W5U"/>
+                            <constraint firstItem="qmd-Kk-Bw7" firstAttribute="top" secondItem="VCO-Vm-qGv" secondAttribute="bottom" constant="77" id="oFN-39-wa1"/>
+                            <constraint firstItem="qmd-Kk-Bw7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="143" id="tUe-og-vL7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="apptern" width="664" height="521"/>
+        <image name="logo" width="382" height="350"/>
+    </resources>
+</document>
