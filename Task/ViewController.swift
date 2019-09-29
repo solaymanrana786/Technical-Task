@@ -13,6 +13,7 @@ import CoreLocation
 class ViewController: UIViewController, MKMapViewDelegate {
     
     
+    @IBOutlet weak var carImageView: UIImageView!
     
     @IBOutlet weak var hideAndShowView: UIView!
     @IBOutlet weak var addressLabel: UILabel!
@@ -71,6 +72,18 @@ class ViewController: UIViewController, MKMapViewDelegate {
         
     }
     
+    
+    
+    func addAnnotation() {
+        
+        let usEmbassy = MKPointAnnotation() //23.7964822,90.4228446
+        usEmbassy.coordinate = CLLocationCoordinate2D(latitude: 23.7964822, longitude: 90.4228446)
+        mapView.addAnnotation(usEmbassy)
+        
+    }
+    
+    
+    
     func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
         let center = getCenterLocation(for: mapView)
         let geocoder = CLGeocoder()
@@ -112,11 +125,18 @@ class ViewController: UIViewController, MKMapViewDelegate {
     }
     
     
+    
     func centerViewInUserLocation(){
         
         if let location = locationManager.location?.coordinate {
             let region = MKCoordinateRegion.init(center: location, latitudinalMeters: regionInMeter, longitudinalMeters: regionInMeter)
             mapView.setRegion(region, animated: true)
+            
+//            let usEmbassy = MKPointAnnotation() //23.7964822,90.4228446
+//            usEmbassy.coordinate = CLLocationCoordinate2D(latitude: location+500, longitude: location+500)
+//            usEmbassy.title = "US Embassy"
+//            mapView.addAnnotation(usEmbassy)
+            
            
         }
     }
@@ -136,6 +156,7 @@ class ViewController: UIViewController, MKMapViewDelegate {
         switch CLLocationManager.authorizationStatus() {
         case .authorizedWhenInUse:
             startTracingUserLocation()
+//            addAnnotation()
             break
         case .notDetermined:
             locationManager.requestWhenInUseAuthorization()
@@ -165,6 +186,10 @@ class ViewController: UIViewController, MKMapViewDelegate {
         let longitude = mapView.centerCoordinate.longitude
         let location = CLLocation(latitude:latitude, longitude:longitude)
         let geoCoder = CLGeocoder()
+        
+//        let position = CLLocationCoordinate2D(latitude: 23.7964859, longitude: 90.4210676)
+//        position.
+//
         geoCoder.reverseGeocodeLocation(location, completionHandler: { (placemarks, error) -> Void in
             
             // Place details
@@ -205,5 +230,11 @@ extension ViewController: CLLocationManagerDelegate {
         checkLocationAuthorization()    }
     
 }
+
+
+
+
+    
+
 
 
