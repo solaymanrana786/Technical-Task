@@ -34,7 +34,7 @@ class ViewController: UIViewController, MKMapViewDelegate {
             if self.hideAndShowView.isHidden == false{
                 self.hideAndShowView.isHidden = true
                 UIView.animateKeyframes(withDuration: 0.25, delay: 0.0, options: UIView.KeyframeAnimationOptions(rawValue: 7), animations: {
-                    self.downView.frame.origin.y+=200
+                    self.downView.frame.origin.y+=175
                 },completion: nil)
                 
             }
@@ -42,7 +42,7 @@ class ViewController: UIViewController, MKMapViewDelegate {
             else{
                 self.hideAndShowView.isHidden = false
                 UIView.animateKeyframes(withDuration: 0.25, delay: 0.0, options: UIView.KeyframeAnimationOptions(rawValue: 7), animations: {
-                    self.downView.frame.origin.y-=200
+                    self.downView.frame.origin.y-=175
                     self.hideAndShowView.alpha = 1
                 },completion: nil)
             }// Here you hide it when animation done
@@ -197,7 +197,7 @@ class ViewController: UIViewController, MKMapViewDelegate {
             placeMark = placemarks?[0]
             
             // Address dictionary
-            print(placeMark.addressDictionary)
+            print(placeMark.addressDictionary!)
             
             // Location name
             if let locationName = placeMark.addressDictionary!["Name"] as? String {

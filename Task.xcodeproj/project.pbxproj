@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B132F2923412BA5000C1C68 /* angle-arrow-down.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B132F2823412BA5000C1C68 /* angle-arrow-down.png */; };
 		2B21E526233A0EC7000887FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B21E525233A0EC7000887FB /* AppDelegate.swift */; };
 		2B21E528233A0EC7000887FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B21E527233A0EC7000887FB /* ViewController.swift */; };
 		2B21E52B233A0EC7000887FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B21E529233A0EC7000887FB /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B132F2823412BA5000C1C68 /* angle-arrow-down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "angle-arrow-down.png"; sourceTree = "<group>"; };
 		2B21E522233A0EC7000887FB /* Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Task.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B21E525233A0EC7000887FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B21E527233A0EC7000887FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				2B21E527233A0EC7000887FB /* ViewController.swift */,
 				2B21E529233A0EC7000887FB /* Main.storyboard */,
 				2B21E52C233A0EC9000887FB /* Assets.xcassets */,
+				2B132F2823412BA5000C1C68 /* angle-arrow-down.png */,
 				2B21E52E233A0EC9000887FB /* LaunchScreen.storyboard */,
 				2B21E531233A0EC9000887FB /* Info.plist */,
 			);
@@ -131,6 +134,7 @@
 				2B21E530233A0EC9000887FB /* LaunchScreen.storyboard in Resources */,
 				2B21E52D233A0EC9000887FB /* Assets.xcassets in Resources */,
 				2B21E52B233A0EC7000887FB /* Main.storyboard in Resources */,
+				2B132F2923412BA5000C1C68 /* angle-arrow-down.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
